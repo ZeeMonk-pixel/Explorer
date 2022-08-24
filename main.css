@@ -3,12 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     font-family: "custom-lato", sans-serif;
 }
 
 /* reusables starts here  */
+span a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.mobile-header-link{
+    color: #ffffff;
+    text-decoration: none;
+}
 /* reusables end here  */
 /* starts here  */
 /* end here  */
