@@ -163,6 +163,9 @@ footer{
     padding: 25px 30px;
     font-size: 18px;
 }
+.mobile-footer-copyright{
+    display: none;
+}
 
 .footer-iconholder{
     /* border: 3px solid white; */
