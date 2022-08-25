@@ -6,6 +6,10 @@
     nav{
         display: none;
     }
+    .navmobile{
+        display: flex;
+    }
+    
     .header-explorer-text{
         align-self: center;
         width: 80%;

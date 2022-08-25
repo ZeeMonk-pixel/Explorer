@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Explorer</title>
     <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <link rel="stylesheet" href="default.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="mobile.css">
 </head>
@@ -13,11 +14,34 @@
 
 <body>
     
-<!-- starts here -->
-<!-- ends here -->
-<!-- header section starts here -->
-<header>
+    
+    <!-- header section starts here -->
+    <header>
+    <!-- mobile-hamburger__menu starts here -->
+    <div class="backdrop" onclick="Addclass()"></div>
+    <nav class="navmobile">
+        <div class="navmobile-text">
+            <h1>EXPLORER</h1>
+        </div>
+        <div class="hamburger-menu" onclick="Addclass()">
+            <div class="menu-bars"></div>
+        </div>
 
+        <div class="mobile-menu-linkholder">
+            <h3><a href="#" class="mobile-menu-link">EXPLORER</a></h3>
+            <ul>
+                <li><a href="#home" class="mobile-menu-link active-link">HOME</a></li>
+                <li><a href="#aboutus" class="mobile-menu-link">ABOUT</a></li>
+                <li><a href="#contactus" class="mobile-menu-link">CONTACT</a></li>
+            </ul>
+        </div>
+    
+
+    </nav>
+        
+        
+    <!-- mobile-hamburger__menu ends here -->
+        
     <div class="explorer">
         <nav>
           <h2>EXPLORER</h2>
@@ -28,10 +52,10 @@
           </div>
             </nav>
         <div class="header-explorer-text">
-            <h2>EXPLORE THE WORLD</h2>
+            <h2 class="header-explorer-texth2">EXPLORE THE WORLD</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eos
                 odit incidunt reiciendis officia explicabo sint, magnam ex laboriosam vel sed eligendi architecto? At iusto nesciunt, quod est assumenda cupiditate! Lorem ipsum dolor sit amet consecteturadipisicing elit.</p>
-                <button>LEARN MORE <i class="fa-solid fa-arrow-right-long cardicon"></i></button>
+                <button>LEARN MORE <i class="fa-solid fa-arrow-right"></i></button>
         </div>
     </div>
 </header>

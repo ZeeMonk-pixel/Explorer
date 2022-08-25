@@ -22,10 +22,108 @@ span a{
     text-decoration: none;
 }
 /* reusables end here  */
-/* starts here  */
-/* end here  */
 /* header section starts here  */
 
+/* mobile-hamburger__menu section starts here  */
+.backdrop{
+    display: none;
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.navmobile{
+    background: #FF6347;
+    display: none;
+    /* border: 3px solid black; */
+    padding: 20px 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.navmobile-text{
+    /* border: 3px solid blue; */
+    display: flex;
+    align-items: center;
+}
+.hamburger-menu{
+     /* border: 2px solid yellow; */
+     width: 25px;
+     height: 25px;
+     align-items: center;
+     justify-content: center;
+     z-index: 1000;
+     display: flex;
+}
+.menu-bars{
+    height: 4px;
+    width: 100%;
+    background: #ffffff;
+    position: relative;
+}
+.menu-bars::before,.menu-bars::after{
+    content: '';
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    background: #ffffff;
+}
+.menu-bars::before{
+    transform: translateY(-10px);        
+}
+.menu-bars::after{
+    transform: translateY(10px);    
+}
+.show .menu-bars{
+    background: transparent;
+}
+.show .menu-bars::before{
+    transform: rotate(45deg);
+}
+.show .menu-bars::after{
+    transform: rotate(-45deg);    
+}
+.mobile-menu-linkholder{
+    width: 100%;
+    /* height: 100vh; */
+    position: fixed;
+    background: #FF6347;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+.mobile-menu-linkholder h3{
+    padding-left: 0;
+    padding-top: 10px;
+    font-size: 23px;
+}
+.showlinks{
+    display: block;
+}
+
+.mobile-menu-linkholder li{
+    list-style: none;
+    font-weight: bolder;
+}
+
+.mobile-menu-link{
+    /* border: 3px solid black; */
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+}
+.mobile-menu-link:hover,.mobile-menu-link:focus{
+    background: #ffffff;
+    color: #FF6347;
+}
+.active-link{
+    background: #ffffff;
+    color: #FF6347;
+}
+/* mobile-hamburger__menu section end here  */
 nav{
     /* border: 3px solid red; */
     display: flex;
@@ -47,7 +145,7 @@ nav h2{
     /* border: 2px solid tomato; */
     height: 550px;
     width: 100%;
-    background: rgba(255, 99, 71, 0.5) url(./header.jpg);
+    background: var(--gradient), url(./header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -56,20 +154,19 @@ nav h2{
     /* background-position: center;
     background-position: 90%; */
 }
-
 .header-explorer-text{
     /* border: 2px solid black; */
     width: 30%;
     color: #ffffff;
     padding-right: 30px;
     margin-top: 100px;
-    padding-right: 100px;
+    padding-right: 50px;
     margin-right: 90px;
     align-self: flex-end;
 }
+
 .header-explorer-text p{
     padding: 30px 0;
-    text-align: justify;
 }
 .header-explorer-text button{
     border: 1px solid white;
@@ -151,6 +248,8 @@ nav h2{
     color: #FF6347;
     height: 40px;
     width: 120px;
+    font-weight: bolder;
+    /* font-size: 14px; */
 }
 .button-holder{
     padding: 40px 25px 18px 0;
@@ -195,8 +294,8 @@ footer{
     /* border: 2px solid green; */
     font-size: 18px;
     color: white;
-    /* height: 50px; */
-    /* width: 50px; */
+    height: 22px;
+    width: 22px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
