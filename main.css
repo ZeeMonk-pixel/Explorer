@@ -95,9 +95,11 @@ span a{
 }
 
 .mobile-menu-linkholder h3{
-    padding-left: 0;
-    padding-top: 10px;
+    padding-left: 10px;
+    padding-top: 25px;
     font-size: 23px;
+    padding-bottom: 20px;
+    align-items: center;
 }
 .showlinks{
     display: block;
