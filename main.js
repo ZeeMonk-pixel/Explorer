@@ -2,7 +2,6 @@
 
 
 
-
 var hamburger = document.querySelector('.hamburger-menu')
 var mobilelinks = document.querySelector('.mobile-menu-linkholder')
 var backdrop = document.querySelector('.backdrop')

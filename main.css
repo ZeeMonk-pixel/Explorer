@@ -143,6 +143,7 @@ nav h2{
     width: 45%;
     padding-right: 90px;
 }
+
 .explorer{
     /* border: 2px solid tomato; */
     height: 550px;
@@ -182,6 +183,7 @@ nav h2{
 /* header section end here  */
 
 /* explore-smt-new section starts here  */
+
 .explore-smt-new1{
     /* border: 2px solid black; */
     width: 90%;
@@ -190,6 +192,7 @@ nav h2{
     justify-content: space-evenly;
     /* align-items: center; */
     padding: 20px 0;
+    /* flex-wrap: wrap; */
 }
 .explore-smt-new{
     /* border: 2px solid black; */
@@ -199,6 +202,7 @@ nav h2{
     justify-content: space-evenly;
     /* align-items: center; */
     padding: 20px 0;
+    /* flex-wrap: wrap; */
 }
 .explore-smt-new__text{
     /* border: 2px solid tomato; */
