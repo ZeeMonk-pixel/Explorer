@@ -49,31 +49,32 @@ span a{
 }
 .hamburger-menu{
      /* border: 2px solid yellow; */
-     width: 25px;
-     height: 25px;
+     width: 20px;
+     height: 15px;
      align-items: center;
      justify-content: center;
      z-index: 1000;
      display: flex;
+     animation: pulse 4s infinite;
 }
 .menu-bars{
-    height: 4px;
+    height: 2px;
     width: 100%;
     background: #ffffff;
     position: relative;
 }
 .menu-bars::before,.menu-bars::after{
     content: '';
-    height: 4px;
+    height: 2px;
     width: 100%;
     position: absolute;
     background: #ffffff;
 }
 .menu-bars::before{
-    transform: translateY(-10px);        
+    transform: translateY(-5px);        
 }
 .menu-bars::after{
-    transform: translateY(10px);    
+    transform: translateY(5px);    
 }
 .show .menu-bars{
     background: transparent;
